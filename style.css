@@ -1,0 +1,862 @@
+/* color rojo: #e71d36
+  color negro: #292727*/
+
+/* Main Container */
+
+body {
+  overflow-x: hidden;
+}
+
+.containers {
+  max-width: 75% !important;
+  margin: 0 auto;
+}
+
+/* Navbars */
+
+.logo-icon {
+  width: 50px;
+}
+
+.hamburguer {
+  width: 32px;
+}
+
+.nav-link {
+  position: relative;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.nav-link:hover {
+  color: #e71d36;
+}
+
+.navbarlink.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 13%;
+  width: 75%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #e71d36;
+}
+
+.navbarlink:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 13%;
+  width: 75%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #e71d36;
+  color: #e71d36;
+}
+
+.signIn a {
+  width: 100px;
+  color: #e71d36 !important;
+  margin-left: 100px;
+}
+
+/* Row header */
+
+.main-row {
+  height: 1052px;
+}
+
+.welcome {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #e71d36;
+}
+
+.title-header {
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.title-description {
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #6c6969;
+}
+
+.title-span a {
+  font-family: Ubuntu;
+  font-size: 19.6px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #e71d36;
+  text-decoration: none;
+}
+
+.title-span-center {
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+/* Row module 1 */
+
+.main-row-module {
+  margin-top: 100px;
+}
+
+.main-row-home {
+  margin-top: 0px;
+}
+
+.row-module-1 {
+  height: 450px;
+}
+
+.module .welcome {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #e71d36;
+}
+
+.module .header {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.module .description {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.6 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #6c6969;
+}
+
+/* Row Cards */
+
+.row-cards {
+  height: 456px;
+  background-color: #faf8f8;
+}
+
+.cards {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 10px 5px rgba(151, 156, 155, 0.07);
+  max-width: 560px !important;
+  height: 257px;
+  margin: 8px;
+}
+
+.cards-title {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.79 !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.row-cards .description {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+}
+
+.cards-icons {
+  width: 60px;
+  height: 60px;
+}
+
+/* Row Award */
+
+.row-award {
+  margin-top: 200px;
+  height: 700px;
+}
+
+.header-award {
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 0.96 !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.row-award .description {
+  max-width: 596px;
+  color: #6c6969;
+}
+
+.row-award img {
+  opacity: 0.56;
+}
+
+/* Row APP */
+
+.row-app {
+  background-color: #e71d36;
+  height: 425px;
+}
+
+.header-app {
+  max-width: 656px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.25 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #ffffff;
+}
+
+.description-app {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.75 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #ffffff;
+}
+
+.app-store {
+  width: 150px;
+}
+
+/*Footer */
+
+.row-footer {
+  height: 400px;
+}
+
+.footer-description {
+  opacity: 0.6;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+  max-width: 448.2px;
+}
+
+.footer-links {
+  width: 80px;
+  opacity: 0.5;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 3 !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+}
+
+.Rights {
+  opacity: 0.4;
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #4a4a4a;
+  float: left;
+}
+
+.social-footer {
+  float: right;
+}
+
+.footer-title {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+}
+
+/*/////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// */
+
+/* FEATURE PAGE /////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////// */
+
+.row-page-features {
+  height: 50px;
+}
+
+.title-page-features {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #e71d36;
+}
+
+.Features {
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+/*/////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// */
+
+/* FAQ PAGE /////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////// */
+
+.card-faq {
+  height: 110px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 7px 0 rgba(151, 156, 155, 0.61);
+}
+
+.title-page-faq {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.25 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #292727;
+}
+
+.span-page-faq {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.row-page-faq {
+  margin-top: 150px;
+}
+
+.faq-page-margin {
+  margin-bottom: 80px;
+}
+
+/*/////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// */
+
+/* CONTACT PAGE /////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////// */
+
+.contact-card-one {
+  max-width: 458px;
+  height: 452px;
+}
+
+.contact-card-two {
+  width: 458px;
+  height: 452px;
+  background-color: #fbeff0;
+  box-shadow: 0 2px 7px 0 rgba(151, 156, 155, 0.61);
+}
+
+.contact-information {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.673 !important;
+  letter-spacing: normal !important;
+  color: #292727;
+}
+
+.contact-description {
+  width: 345px;
+  height: 78px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+}
+
+.contact-info {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.63 !important;
+  letter-spacing: normal !important;
+  color: #6c6969;
+}
+
+.location {
+  width: 17px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 283px;
+  height: 49px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px rgba(80, 93, 104, 0.23);
+}
+
+.button-submit {
+  max-width: 280px;
+  width: 100%;
+  height: 49px;
+  border-radius: 2px;
+  background-color: #e71d36;
+  color: white;
+}
+
+.form-control::placeholder {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.86 !important;
+  letter-spacing: normal !important;
+  color: #cecccc;
+}
+
+.textarea {
+  max-width: 283px;
+  height: 90px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px rgba(80, 93, 104, 0.23);
+}
+
+/* OVERLAY */
+
+.container-fluid {
+  z-index: 0.5;
+}
+
+.btn-navbar {
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #e71d36;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+.overlay .nav-link {
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 2.19 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #ffffff !important;
+}
+
+.overlay .nav-link:hover {
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 2.19 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-navbar-close {
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: bold !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 2.19 !important;
+  letter-spacing: normal !important;
+  text-align: center;
+  color: #ffffff !important;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+  /* CONTACT */
+  .contact-card-two {
+    background-color: #fff;
+  }
+  .form-control {
+    max-width: 400px;
+  }
+  .header-app {
+    font-size: 32px;
+  }
+  .app-store {
+    width: 125px;
+  }
+  .Rights {
+    margin-top: 20px;
+    float: left;
+  }
+  .social-footer {
+    float: left;
+  }
+  .footer-title {
+    margin-top: 15px;
+  }
+  .row-footer {
+    margin-top: 100px;
+  }
+  /* /FAQ/ */
+  .span-page-faq {
+    font-size: 16px;
+    text-align: left;
+    max-width: 250px;
+    position: relative;
+  }
+  .features,
+  .title-header {
+    font-size: 32px;
+    max-width: 500px;
+  }
+  .module .header {
+    font-size: 32px;
+  }
+  .title-description {
+    font-size: 14px;
+    width: 100%;
+  }
+  .card-faq {
+    height: 110px;
+  }
+  /* HOME */
+  .main-row {
+    height: 600px;
+    background: none;
+  }
+  .main-row-module {
+    margin-top: 80px;
+  }
+  .main-row-home {
+    margin-top: 0px;
+  }
+  .cards-title {
+    font-size: 20px;
+  }
+  .row-cards .description {
+    font-size: 14px;
+  }
+  .cards-title {
+    text-align: center;
+  }
+  .row-award {
+    margin-top: 100px;
+  }
+  .row-page-features {
+    height: 80px;
+  }
+  .row-cards {
+    height: 800px;
+    background-color: #faf8f8;
+  }
+  /* LOGO */
+  .logo {
+    width: 117.9px;
+    height: 17.3px;
+  }
+  /* CONTAINER CONTROL VIEW */
+  .containers {
+    max-width: 85% !important;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .containers {
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+  .title-description {
+    font-size: 14px;
+    width: 50%;
+  }
+  .card-faq {
+    height: 90px;
+  }
+  .features,
+  .title-header {
+    font-size: 42px;
+  }
+  .main-row {
+    height: 500px;
+    background: none;
+  }
+  .main-row-module {
+    margin-top: 80px;
+  }
+  .main-row-home {
+    margin-top: 250px;
+  }
+  .cards-title {
+    text-align: center;
+  }
+  .row-page-features {
+    height: 50px;
+  }
+  .contact-card-one {
+    margin: 0 auto;
+  }
+  .row-cards {
+    height: 800px;
+    background-color: #faf8f8;
+  }
+  .cards:nth-child(2) {
+    margin: 0px;
+  }
+  .row-page-faq {
+    margin-top: 200px;
+  }
+  /* CONTAINER CONTROL VIEW */
+  .containers {
+    max-width: 85% !important;
+    margin: 0 auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  .title-description {
+    width: 50%;
+  }
+  .features,
+  .title-header {
+    font-size: 56px;
+    max-width: 100%;
+  }
+  .main-row {
+    height: 800px;
+    background: none;
+  }
+  .cards-title {
+    text-align: center;
+  }
+  .row-award {
+    margin-top: 125px;
+  }
+  .main-row-module {
+    margin-top: 80px;
+  }
+  .main-row-home {
+    margin-top: 150px;
+  }
+  .row-page-features {
+    height: 100px;
+  }
+  .contact-card-one {
+    margin: 0 auto;
+  }
+  .row-cards {
+    height: 800px;
+    background-color: #faf8f8;
+  }
+  .cards:nth-child(2) {
+    margin: 0px;
+  }
+  .row-page-faq {
+    margin-top: 250px;
+  }
+  /* CONTAINER CONTROL VIEW */
+  .containers {
+    max-width: 75% !important;
+    margin: 0 auto;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .title-description {
+    width: 50%;
+  }
+  .cards-title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .row-award {
+    margin-top: 50px;
+  }
+  .row-award {
+    margin-top: 125px;
+  }
+  .main-row-module {
+    margin-top: 250px;
+  }
+  .main-row-home {
+    margin-top: 400px;
+  }
+  .btn-navbar {
+    display: none;
+  }
+  .contact-card-one {
+    margin: 0 auto;
+  }
+  .row-cards {
+    height: 600px;
+    background-color: #faf8f8;
+  }
+  .row-page-features {
+    height: 50px;
+  }
+  .cards:nth-child(2) {
+    margin: 0px;
+  }
+  .row-page-faq {
+    margin-top: 250px;
+  }
+  /* CONTAINER CONTROL VIEW */
+  .containers {
+    max-width: 75% !important;
+    margin: 0 auto;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .title-description {
+    width: 50%;
+  }
+  .back {
+    height: 850px;
+    background: url("./assets/landing-background.svg") no-repeat center;
+    background-size: cover;
+    background-size: contain;
+  }
+  .cards-title {
+    font-size: 21px;
+    text-align: left;
+  }
+  .row-award {
+    margin-top: 50px;
+  }
+  .main-row-module {
+    margin-top: 0px;
+  }
+  .main-row-home {
+    margin-top: 1vw;
+  }
+  .row-page-features {
+    height: 250px;
+  }
+  .btn-navbar {
+    display: none;
+  }
+  .row-cards {
+    height: 600px;
+    background-color: #faf8f8;
+  }
+  .cards:nth-child(2) {
+    margin: 8px;
+  }
+  .row-page-faq {
+    margin-top: 100px;
+  }
+  /* CONTAINER CONTROL VIEW */
+  .containers {
+    max-width: 75% !important;
+    margin: 0 auto;
+  }
+}

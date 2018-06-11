@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    crossorigin = "anonymous" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <title>SkoolTales</title>
+
+  <script>    
+
+
+      $(document).ready(function () {
+        $('#home-page').load('home.html')
+        $('#features-page').load('feature.html')
+        $('#faq-page').load('faq.html')
+        $('#contact-page').load('contact.html')
+        $('#home-page').show()
+        $("#features-page").hide()
+        $("#contact-page").hide()
+        $("#faq-page").hide()
+
+
+        $(".btn-navbar").click(function (event) {
+          event.preventDefault();
+          $("body").css("overflow", "hidden");
+
+          $('.overlay').show();
+        });
+
+        $(".btn-navbar-close").click(function (event) {
+          event.preventDefault();
+          $("body").css("overflow", "scroll");
+
+          $('.overlay').hide();
+
+        });
+
+
+        $('.navbarlink').click(function (e) {
+          var idValue = $(this).attr("label")
+          e.preventDefault()
+
+          if ($(this).hasClass('overlay-link')) {
+            $("body").css("overflow", "scroll");
+
+            $('.overlay').hide();
+
+          }
+
+          console.log(idValue)
+          if (idValue === 'home-page') {
+            $('#home-page').show()
+            $("#features-page").hide()
+            $("#contact-page").hide()
+            $("#faq-page").hide()
+          }
+          else if (idValue === 'features-page') {
+            console.log('features-pages true')
+            $('#features-page').show()
+            $("#home-page").hide()
+            $("#contact-page").hide()
+            $("#faq-page").hide()
+          }
+          else if (idValue === 'faq-page') {
+            $('#faq-page').show()
+            $("#home-page").hide()
+            $("#contact-page").hide()
+            $("#features-page").hide()
+          }
+          else if (idValue === 'contact-page') {
+            $('#contact-page').show()
+            $("#home-page").hide()
+            $("#faq-page").hide()
+            $("#features-page").hide()
+          }
+        });
+
+
+        $('.navbarlink').click(function (e) {
+          $('.navbarlink').removeClass("active");
+          $(this).addClass("active");
+        });
+
+
+      });</script>
+
+</head>
+
+<!-- OVERLAY NAVBAR -->
+
+<div class="container-fluid overlay">
+  <div class="row h-50 mb-5">
+    <a class="ml-auto nav-link btn btn-navbar-close h-25">X</a>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-auto ">
+      <div class="row">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item ">
+            <a class="nav-link navbarlink overlay-link " label="home-page" href="./index.html">HOME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarlink overlay-link " label="features-page" href="./feature.html">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarlink overlay-link " label="faq-page" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbarlink overlay-link " label="contact-page" href="./contact.html ">CONTACT</a>
+          </li>
+          <li class="nav-item navbarlink ">
+            <a class="nav-link " href="# ">SIGN IN</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row ml-1 mb-3 ml-sm-3 mb-md-0 mb-lg-0 mb-xl-0 w-100 mt-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 mx-auto">
+              <span>
+                <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d">
+                  <img class="" src="./assets/Facebook-white.svg " alt=" ">
+                </a>
+                <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d">
+                  <img class="ml-4" src="./assets/Twitter-white.svg " alt=" ">
+                </a>
+                <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d">
+                  <img class="ml-4" src="./assets/in-white.svg " alt=" ">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container" class="containers p-0">
+
+  <!-- NAVBAR -->
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="row">
+        <div class="col-12 p-0">
+          <nav class="navbar navbar-expand-lg mt-4 p-0">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/clear_logo.png" class="logo-icon" alt="">
+              <img src="./assets/logo.svg" class="logo">
+            </a>
+            <a class="btn-navbar mr-3" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <img class="hamburguer" src="./assets/hamburger.svg" alt="">
+              </span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto mt-3">
+                <li class="nav-item ml-4 active">
+                  <a class="nav-link navbarlink " label="home-page" href="./index.html">HOME
+                  </a>
+                </li>
+                <li class="nav-item ml-4">
+                  <a class="nav-link navbarlink " label="features-page" href="./feature.html">FEATURES</a>
+                </li>
+                <li class="nav-item ml-4">
+                  <a class="nav-link navbarlink " label="faq-page" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item ml-4">
+                  <a class="nav-link navbarlink " label="contact-page" href="./contact.html ">CONTACT</a>
+                </li>
+                <li class="nav-item signIn ">
+                  <a class="nav-link " href="# ">SIGN IN</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="home-page">
+
+</div>
+
+<div id="features-page">
+
+</div>
+
+<div id="faq-page">
+
+</div>
+
+<div id="contact-page">
+
+</div>
+
+
+<!-- ROW APP -->
+<div class="row-app">
+  <div class="container h-100 ">
+    <div class="row h-100 ">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto ">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 text-center mx-auto my-auto text-center ">
+          <p class="header-app mx-auto ">
+            SchoolTales is a free app from App Store and Google play
+          </p>
+          <p class="description-app text-center mx-auto mt-4 ">
+            Downlaod and Sign Up
+          </p>
+          <p class="text-center mx-auto mt-4 mr-4 ">
+            <span>
+              <a href="/app-store ">
+                <img class="app-store " src="./assets/google-app.svg " alt=" ">
+              </a>
+            </span>
+            <span class="ml-2 ">
+              <a href="">
+                <img class="app-store " src="./assets/apple-store.svg " alt=" ">
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER  -->
+<div class="container" style="width: 100%;">
+  <div class=" row row-footer mt-5 mt-sm-5 ">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto my-auto ">
+      <h1 class="logo ">
+        <img src="./assets/logo.svg " alt=" ">
+      </h1>
+      <p class="footer-description text-left mt-4 ">
+        Ullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-auto ">
+      <div class="row mt-5 ">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mx-auto ">
+          <h1 class="footer-title ">Product</h1>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">App Store</a>
+          </p>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">Google Play</a>
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mx-auto ">
+          <h1 class="footer-title ">Support</h1>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">Blog</a>
+          </p>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">FAQ</a>
+          </p>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">Contact</a>
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mx-auto ">
+          <h1 class="footer-title ">Contact</h1>
+          <p class="m-0 ">
+            <a class="footer-links " href="/app-store ">info@yourname.com
+            </a>
+          </p>
+          <p class="m-0 mb-4 ">
+            <a class="footer-links " href="/app-store ">11-000-0000
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row ml-1 mb-3 ml-sm-3 mb-md-0 mb-lg-0 mb-xl-0 w-100 pt-xl-5">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto my-auto ">
+        <span class="social-footer mr-5 ">
+          <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d ">
+            <img class=" " src="./assets/Facebook.svg " alt=" ">
+          </a>
+          <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d ">
+            <img class="ml-4 " src="./assets/Twitter.svg " alt=" ">
+          </a>
+          <a href="https://app.zeplin.io/project/5b138bfcaf5175d15b34bf81/screen/5b1588aff2f30d114cc8db5d ">
+            <img class="ml-4 " src="./assets/in.svg " alt=" ">
+          </a>
+        </span>
+        <span class="Rights float-left pt-xl-2">©2018 - skooltales. All right reserved</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
